@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Discover-->
+        <scene sceneID="J1W-gH-ww4">
+            <objects>
+                <viewController id="aKp-2V-77c" customClass="DiscoverViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g9N-VH-GSz"/>
+                        <viewControllerLayoutGuide type="bottom" id="2GL-tz-3nB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QkE-3D-u68">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Discover" id="uhP-DN-h77"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kh8-Hx-fwF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2617" y="-842"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vuh-yZ-Oke">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationDiscover" automaticallyAdjustsScrollViewInsets="NO" id="u80-vh-gOx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Search" selectedImage="Search_Selected" id="UMC-J2-21K">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cZb-Ol-Vpd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aKp-2V-77c" kind="relationship" relationship="rootViewController" id="1mk-n4-tKE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJE-HQ-jF0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2618" y="-1561"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Search" width="23" height="22"/>
+        <image name="Search_Selected" width="23" height="22"/>
+    </resources>
+</document>
