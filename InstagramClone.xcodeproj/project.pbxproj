@@ -49,6 +49,7 @@
 		C4EBB06F1EC5C79A00566612 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBB06E1EC5C79A00566612 /* PeopleTableViewCell.swift */; };
 		C4EBB0711EC981E700566612 /* FollowAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBB0701EC981E700566612 /* FollowAPI.swift */; };
 		C4EBB0731ECC84BF00566612 /* FeedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBB0721ECC84BF00566612 /* FeedAPI.swift */; };
+		C4EBB0761ED0887C00566612 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBB0751ED0887C00566612 /* SearchViewController.swift */; };
 		E5197E9F7ACA6D1B0A25FA73 /* Pods_InstagramClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070F0B6E0AB5C9959C3BD303 /* Pods_InstagramClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +103,7 @@
 		C4EBB06E1EC5C79A00566612 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 		C4EBB0701EC981E700566612 /* FollowAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowAPI.swift; sourceTree = "<group>"; };
 		C4EBB0721ECC84BF00566612 /* FeedAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedAPI.swift; sourceTree = "<group>"; };
+		C4EBB0751ED0887C00566612 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,12 +153,11 @@
 			isa = PBXGroup;
 			children = (
 				C4EBB0331EB0EE4400566612 /* Home */,
-				C498137A1EA12CE10052FA5C /* ProfileViewController.swift */,
-				C49813721EA12C270052FA5C /* HomeViewController.swift */,
-				C49813781EA12CB50052FA5C /* ActivityViewController.swift */,
+				C4EBB0771ED09A7100566612 /* Discover */,
 				C49813761EA12C930052FA5C /* CameraViewController.swift */,
+				C498137A1EA12CE10052FA5C /* ProfileViewController.swift */,
+				C49813781EA12CB50052FA5C /* ActivityViewController.swift */,
 				C4EBB06C1EC5C72700566612 /* PeopleViewController.swift */,
-				C49813741EA12C700052FA5C /* DiscoverViewController.swift */,
 			);
 			name = TabBarControllers;
 			sourceTree = "<group>";
@@ -247,6 +248,7 @@
 		C4EBB0331EB0EE4400566612 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C49813721EA12C270052FA5C /* HomeViewController.swift */,
 				C4EBB0341EB0EE9B00566612 /* CommentViewController.swift */,
 			);
 			name = Home;
@@ -265,6 +267,15 @@
 				C4EBB0721ECC84BF00566612 /* FeedAPI.swift */,
 			);
 			name = APIs;
+			sourceTree = "<group>";
+		};
+		C4EBB0771ED09A7100566612 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				C49813741EA12C700052FA5C /* DiscoverViewController.swift */,
+				C4EBB0751ED0887C00566612 /* SearchViewController.swift */,
+			);
+			name = Discover;
 			sourceTree = "<group>";
 		};
 		E79BB93081B24E8109AAD90E /* Frameworks */ = {
@@ -415,6 +426,7 @@
 				C4EBB05C1EB8A88E00566612 /* UserAPI.swift in Sources */,
 				C4174B5F1EAE5121004C6DB7 /* HomeTableViewCell.swift in Sources */,
 				C4EBB0691EC308B400566612 /* PhotoCollectionViewCell.swift in Sources */,
+				C4EBB0761ED0887C00566612 /* SearchViewController.swift in Sources */,
 				C498135B1EA0C6600052FA5C /* AppDelegate.swift in Sources */,
 				C4EBB0711EC981E700566612 /* FollowAPI.swift in Sources */,
 				C4174B5D1EAA6694004C6DB7 /* Post.swift in Sources */,
